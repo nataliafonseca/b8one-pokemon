@@ -131,7 +131,7 @@ body {
 
 .pokemon-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 50px 60px;
   padding-bottom: 40px;
 }
@@ -143,11 +143,15 @@ body {
 
 .pokemon-card-image {
   display: flex;
-  height: 265px;
   align-items: center;
   justify-content: center;
   background: var(--details);
   border-radius: 15px 15px 0 0;
+}
+
+.pokemon-card-image img {
+  height: 200px;
+  width: auto;
 }
 
 .pokemon-card-content {
@@ -160,6 +164,7 @@ body {
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 16px;
+  text-transform: capitalize;
 }
 
 .pokemon-card-type {
@@ -187,7 +192,7 @@ body {
 
 .pokemon-card-attributes-progress-bar {
   height: 100%;
-  width: 70%;
+  /* width: 70%; */
   border-radius: 10px;
   background-color: var(--primary);
 }
