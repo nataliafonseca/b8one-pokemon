@@ -1,7 +1,7 @@
 async function fetchPokemons() {
   const pokemons = [];
 
-  for (let i = 1; i <= 151; i++) {
+  for (let i = 1; i <= 20; i++) {
     const { name, types, sprites, stats } = await fetchPokemonInfo(
       `https://pokeapi.co/api/v2/pokemon/${i}/`
     );
